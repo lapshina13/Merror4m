@@ -7,56 +7,191 @@
   <title>Afisha</title>
   <link rel="stylesheet" href="stylesheets/style.css">
   <meta name="description" content="">
-
   <meta property="og:title" content="">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
   <meta property="og:image:alt" content="">
-
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-
+  <link rel="apple-touch-icon" href="icon.webp">
   <link rel="manifest" href="site.webmanifest">
-
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
-
 <header class="site-header">
-  <div class="container">
+  <div class="header-container">
     <div class="logo">
       <a href="index.html">MERROR</a>
+      <span>театр разбитых зеркал</span>
     </div>
     <div class="navigation-group">
       <nav class="main-nav">
         <ul>
           <li><a href="about.html">о нас</a></li>
-          <li><a style="font-weight: 600" href="afisha.html">афиша</a></li>
+          <li><a href="afisha.html">афиша</a></li>
           <li><a href="tickets.html">билеты</a></li>
           <li><a href="shop.html">магазин</a></li>
           <li><a href="contest.html">конкурс</a></li>
           <li><a href="online-show.html">онлайн представление</a></li>
         </ul>
       </nav>
-      <a href="#" class="cart-link" aria-label="Корзина">
-        <img src="./images/shop.svg" alt="Корзина">
-      </a>
+<a href="#" class="cart-link" aria-label="Корзина">
+  <img src="images/cart-icon-black.svg" alt="Корзина">
+  <span class="cart-counter"></span>
+</a>
     </div>
   </div>
 </header>
 
+<main class="afisha-page">
+  <div class="afisha-page__container">
 
-  <script src="javascript/app.js"></script>
+    <section class="afisha-event" data-event-id="reflection">
+      <div class="afisha-event__posters">
+
+        <div class="afisha-event__poster">
+          <img src="images/afisha-poster-1-1.webp" alt="Постер Отражение души - желтый">
+        </div>
+        <div class="afisha-event__poster">
+          <img src="images/afisha-poster-1-2.webp" alt="Постер Отражение души - розовый">
+        </div>
+        <div class="afisha-event__poster">
+          <img src="images/afisha-poster-1-3.webp" alt="Постер Отражение души - синий">
+        </div>
+
+        <div class="afisha-event__info">
+          <h2 class="afisha-event__date">4 декабря</h2>
+          <p class="afisha-event__description">
+            Театральная постановка «Отражение души» исследует внутренние переживания и тайны человеческих сердец через символическую игру зеркал и образов, погружая зрителя в глубины личных и духовных поисков.
+          </p>
+          <a href="tickets.html" class="afisha-event__button">купить билет</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="afisha-event" data-event-id="splash">
+      <div class="afisha-event__posters">
+        <div class="afisha-event__info">
+          <h2 class="afisha-event__date">7 августа</h2>
+          <p class="afisha-event__description">
+            Наш новый проект «Всплеск» воплощает энергию освобождения и внутреннего напряжения через разбитие зеркал, позволяя участникам выплеснуть свои эмоции и обрести новую силу.
+          </p>
+          <a href="tickets.html" class="afisha-event__button">купить билет</a>
+        </div>
+        <div class="afisha-event__poster">
+          <img src="images/afisha-poster-2-1.webp" alt="Постер Всплеск - бита">
+        </div>
+        <div class="afisha-event__poster">
+          <img src="images/afisha-poster-2-2.webp" alt="Постер Всплеск - рука">
+        </div>
+        <div class="afisha-event__poster">
+          <img src="images/afisha-poster-2-3.webp" alt="Постер Всплеск - молоток">
+        </div>
+      </div>
+    </section>
+
+    <section class="afisha-event" data-event-id="masterclass">
+      <div class="afisha-event__posters">
+        <div class="afisha-event__poster">
+          <img src="images/afisha-poster-3-1.webp" alt="Постер Мастер-класс - крик">
+        </div>
+        <div class="afisha-event__poster">
+          <img src="images/afisha-poster-3-2.webp" alt="Постер Мастер-класс - маски">
+        </div>
+        <div class="afisha-event__poster">
+          <img src="images/afisha-poster-3-3.webp" alt="Постер Мастер-класс - силуэты">
+        </div>
+        <div class="afisha-event__info">
+          <h2 class="afisha-event__date">12 декабря</h2>
+          <p class="afisha-event__description">
+            Мастер-класс по актерскому мастерству в театре «Разбитых зеркал» поможет раскрыть внутренние ресурсы, научиться экспрессивной игре и работе с эмоциями через методы импровизации и театральной практики.
+          </p>
+          <a href="tickets.html" class="afisha-event__button">купить билет</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="afisha-event" data-event-id="emotions">
+      <div class="afisha-event__posters">
+        <div class="afisha-event__info">
+          <h2 class="afisha-event__date">5 июня</h2>
+          <p class="afisha-event__description">
+            Постановка «Не бойся своих эмоций» приглашает зрителя принять свои внутренние чувства и превратить страхи в источник силы и освобождения.
+          </p>
+          <a href="tickets.html" class="afisha-event__button">купить билет</a>
+        </div>
+
+        <div class="afisha-event__poster">
+          <img src="images/afisha-poster-4-1.webp" alt="Постер Не бойся своих эмоций - синий">
+        </div>
+        <div class="afisha-event__poster">
+          <img src="images/afisha-poster-4-2.webp" alt="Постер Не бойся своих эмоций - красный">
+        </div>
+        <div class="afisha-event__poster">
+          <img src="images/afisha-poster-4-3.webp" alt="Постер Не бойся своих эмоций - зеленый">
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+<section class="about-merch">
+  <div class="about-merch__container">
+    <img class="smallPain" src="./images/smalpain.webp" alt="">
+    <div class="about-merch__text">
+      <h2>ПОСЕТИТЕ НАШЕ <br>
+        ОНЛАЙН-ПРЕДСТАВЛЕНИЕ </h2>
+      <p>Приглашаем вас на уникальное онлайн-представление — искусство <br>без границ, комфорт без очередей! </p>
+      <a href="shop.html" class="about-merch__button">посмотреть</a>
+    </div>
+
+    <div class="about-merch__image">
+      <img src="images/big-paint.webp" alt="Промо мерча">
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column footer-logo-col">
+      <a href="index.html" class="footer-logo">MERROR</a>
+    </div>
+    <div class="footer-column footer-nav-col">
+      <h3>Посетителям</h3>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="afisha.html">Афиша</a></li>
+          <li><a href="tickets.html">Билеты</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+          <li><a href="contest.html">Конкурс</a></li>
+          <li><a href="online-show.html">Онлайн представление</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-column footer-contacts-col">
+      <h3>контакты</h3>
+      <div class="contact-info">
+        <a href="tel:+79167770705">+7 (916) 777-07-05</a>
+        <a href="mailto:merror.th@mail.ru">merror.th@mail.ru</a>
+        <p>Дом октябрь 14. стр 2</p>
+      </div>
+      <div class="social-links">
+        <a href="#" aria-label="Telegram"><img src="images/telegram.svg" alt="Telegram"></a>
+        <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram"></a>
+        <a href="#" aria-label="WhatsApp"><img src="images/what's%20up.svg" alt="WhatsApp"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="javascript/app.js"></script>
 
 </body>
-
 </html>

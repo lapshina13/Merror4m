@@ -7,34 +7,28 @@
   <title>Contest</title>
   <link rel="stylesheet" href="stylesheets/style.css">
   <meta name="description" content="">
-
   <meta property="og:title" content="">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
   <meta property="og:image:alt" content="">
-
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-
+  <link rel="apple-touch-icon" href="icon.webp">
   <link rel="manifest" href="site.webmanifest">
-
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
-
 <header class="site-header">
-  <div class="container">
+  <div class="header-container">
     <div class="logo">
       <a href="index.html">MERROR</a>
+      <span>театр разбитых зеркал</span>
     </div>
     <div class="navigation-group">
       <nav class="main-nav">
@@ -43,20 +37,128 @@
           <li><a href="afisha.html">афиша</a></li>
           <li><a href="tickets.html">билеты</a></li>
           <li><a href="shop.html">магазин</a></li>
-          <li><a style="font-weight: 600" href="contest.html">конкурс</a></li>
+          <li><a href="contest.html">конкурс</a></li>
           <li><a href="online-show.html">онлайн представление</a></li>
         </ul>
       </nav>
       <a href="#" class="cart-link" aria-label="Корзина">
-        <img src="./images/shop.svg" alt="Корзина">
+        <img src="images/shop.svg" alt="Корзина">
+        <span class="cart-counter"></span>
       </a>
     </div>
   </div>
 </header>
 
+<main class="contest-page">
+  <div class="contest-page__container">
+    <section class="contest-hero">
+      <div class="contest-hero__title-wrapper">
+        <h1 class="contest-hero__title">
+          Приглашаем всех <br> творческих людей <br>принять участие <br> в конкурсе <br> на создание <br> веб-плаката,
+          <br> посвященного <br> нашему театру
+        </h1>
+      </div>
+      <div class="contest-hero__content">
+        <p class="contest-hero__description">
+          Участники могут проявить свои дизайнерские способности и представить уникальное виденье театрального искусства. Для участия необходимо загрузить свой плакат в формате на странице конкурса до 25-го числа текущего месяца. Жюри будет оценивать работы по оригинальности, креативности и соответствию тематике. Победитель объявляется 30-го числа каждого месяца, а его работа будет опубликована на официальном сайте театра. Также, автор лучшего плаката получит два бесплатных билета на любую постановку. Не упустите шанс заявить о себе!
+        </p>
+        <div class="contest-hero__buttons">
+          <a href="#" class="contest-hero__button contest-hero__button--solid">принять участие</a>
+          <a href="https://lapshina13.github.io/Merror/" class="contest-hero__button contest-hero__button--outline">веб-плакат</a>
+        </div>
+      </div>
+    </section>
 
-  <script src="javascript/app.js"></script>
+    <section class="contest-gallery">
+      <div class="contest-gallery__item image-cycle-on-hover">
+        <img src="images/star2.svg"
+             data-cycle-images="images/star3.svg,images/star1.svg,images/star2.svg"
+             alt="Пример конкурсной работы 1">
+      </div>
+      <div class="contest-gallery__item animated-gallery-item">
+        <img src="images/contest-img-2.webp" alt="Прыгающий элемент" class="bouncing-element">
+      </div>
+      <div class="contest-gallery__item">
+<!--        <img src="images/contest-img-3.webp" alt="Пример конкурсной работы 3">-->
+      </div>
+      <div class="contest-gallery__item">
+        <img src="images/eyes-ezgif.com-crop.gif" alt="Пример конкурсной работы 3">
+      </div>
+    </section>
+  </div>
+
+  <div class="modal-overlay" id="contest-modal-overlay">
+    <div class="modal-content contest-form-modal" id="contest-form-modal">
+      <button class="modal-close-btn">×</button>
+      <h2 class="modal-title">Заполните форму</h2>
+      <form id="contest-application-form">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Имя и Фамилия" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" name="phone" placeholder="Номер телефона" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Электронная почта" required>
+        </div>
+        <div class="form-group">
+          <label for="file-upload" class="file-upload-label">
+            <img src="images/download.svg" alt="">
+            <span>Загрузить файл...</span>
+          </label>
+<!--          <input type="file" id="file-upload" name="file">-->
+        </div>
+        <div class="form-agreement">
+          <input type="checkbox" id="contest-consent" name="consent" required>
+          <label for="contest-consent">Нажимая кнопку «отправить» Вы соглашаетесь с нашей политикой конфиденциальности</label>
+        </div>
+        <a class="form-submit-btn" href="./thank-you-second.html">отправить</a>
+      </form>
+    </div>
+    <div class="modal-content contest-success-modal" id="contest-success-modal">
+      <button class="modal-close-btn">×</button>
+      <h2>Благодарим за участие!</h2>
+      <p>С результатами конкурса Вы сможете ознакомиться на сайте.</p>
+      <img src="images/pain-v2.webp" alt="" class="modal-decoration">
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column footer-logo-col">
+      <a href="index.html" class="footer-logo">MERROR</a>
+    </div>
+    <div class="footer-column footer-nav-col">
+      <h3>Посетителям</h3>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="afisha.html">Афиша</a></li>
+          <li><a href="tickets.html">Билеты</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+          <li><a href="contest.html">Конкурс</a></li>
+          <li><a href="online-show.html">Онлайн представление</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-column footer-contacts-col">
+      <h3>контакты</h3>
+      <div class="contact-info">
+        <a href="tel:+79167770705">+7 (916) 777-07-05</a>
+        <a href="mailto:merror.th@mail.ru">merror.th@mail.ru</a>
+        <p>Дом октябрь 14. стр 2</p>
+      </div>
+      <div class="social-links">
+        <a href="#" aria-label="Telegram"><img src="images/telegram.svg" alt="Telegram"></a>
+        <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram"></a>
+        <a href="#" aria-label="WhatsApp"><img src="images/what's%20up.svg" alt="WhatsApp"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="javascript/app.js"></script>
 
 </body>
-
 </html>

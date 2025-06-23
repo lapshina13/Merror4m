@@ -16,7 +16,7 @@
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.webp">
 
   <link rel="manifest" href="site.webmanifest">
 
@@ -30,11 +30,11 @@
 
 <body>
 
-
 <header class="site-header">
-  <div class="container">
+  <div class="header-container">
     <div class="logo">
       <a href="index.html">MERROR</a>
+      <span>театр разбитых зеркал</span>
     </div>
     <div class="navigation-group">
       <nav class="main-nav">
@@ -42,20 +42,215 @@
           <li><a href="about.html">о нас</a></li>
           <li><a href="afisha.html">афиша</a></li>
           <li><a href="tickets.html">билеты</a></li>
-          <li><a style="font-weight: 600" href="shop.html">магазин</a></li>
+          <li><a href="shop.html">магазин</a></li>
           <li><a href="contest.html">конкурс</a></li>
           <li><a href="online-show.html">онлайн представление</a></li>
         </ul>
       </nav>
-      <a href="#" class="cart-link" aria-label="Корзина">
-        <img src="./images/shop.svg" alt="Корзина">
-      </a>
+<a href="#" class="cart-link" aria-label="Корзина">
+  <img src="images/cart-icon-black.svg" alt="Корзина">
+  <span class="cart-counter"></span>
+</a>
     </div>
   </div>
 </header>
+<main class="shop-page">
+  <div class="shop-page__container">
+    <div class="shop-grid">
 
+      <div class="shop-product product-swap-on-hover">
+        <div class="shop-product__image-wrapper">
+          <img src="images/shop-tshirt.webp" data-hover-src="images/shop-tshirt-hover.webp" alt="Футболка" class="shop-product__image">
+          <button class="shop-product__cart-btn" aria-label="Добавить в корзину">
+            <img src="images/cart-icon-black.svg" alt="">
+          </button>
+        </div>
+        <div class="shop-product__info">
+          <h3 class="shop-product__name">Футболка</h3>
+          <p class="shop-product__price">3590 руб.</p>
+        </div>
+      </div>
+
+      <div class="shop-product product-swap-on-hover">
+        <div class="shop-product__image-wrapper">
+          <img src="images/shop-hoodie.webp" data-hover-src="images/shop-hoodie-hover.webp" alt="Худи" class="shop-product__image">
+          <button class="shop-product__cart-btn" aria-label="Добавить в корзину">
+            <img src="images/cart-icon-black.svg" alt="">
+          </button>
+        </div>
+        <div class="shop-product__info">
+          <h3 class="shop-product__name">Худи</h3>
+          <p class="shop-product__price">5490 руб.</p>
+        </div>
+      </div>
+
+      <div class="shop-product product-swap-on-hover">
+        <div class="shop-product__image-wrapper">
+          <img src="images/shop-cap.webp" data-hover-src="images/shop-cap-hover.webp" alt="Кепка" class="shop-product__image">
+          <button class="shop-product__cart-btn" aria-label="Добавить в корзину">
+            <img src="images/cart-icon-black.svg" alt="">
+          </button>
+        </div>
+        <div class="shop-product__info">
+          <h3 class="shop-product__name">Кепка</h3>
+          <p class="shop-product__price">1490 руб.</p>
+        </div>
+      </div>
+
+      <div class="shop-product product-swap-on-hover">
+        <div class="shop-product__image-wrapper">
+          <img src="images/shop-tote.webp" data-hover-src="images/shop-tote-hover.webp" alt="Шоппер" class="shop-product__image">
+          <button class="shop-product__cart-btn" aria-label="Добавить в корзину">
+            <img src="images/cart-icon-black.svg" alt="">
+          </button>
+        </div>
+        <div class="shop-product__info">
+          <h3 class="shop-product__name">Шоппер</h3>
+          <p class="shop-product__price">1490 руб.</p>
+        </div>
+      </div>
+
+      <div class="shop-product">
+        <div class="shop-product__image-wrapper">
+          <img src="images/shop-keychain.webp" alt="Брелки" class="shop-product__image">
+          <button class="shop-product__cart-btn" aria-label="Добавить в корзину">
+            <img src="images/cart-icon-black.svg" alt="">
+          </button>
+        </div>
+        <div class="shop-product__info">
+          <h3 class="shop-product__name">Брелки (3 шт.)</h3>
+          <p class="shop-product__price">990 руб.</p>
+        </div>
+      </div>
+
+      <div class="shop-product">
+        <div class="shop-product__image-wrapper">
+          <img src="images/shop-phonecase.webp" alt="Чехол для телефона" class="shop-product__image">
+          <button class="shop-product__cart-btn" aria-label="Добавить в корзину">
+            <img src="images/cart-icon-black.svg" alt="">
+          </button>
+        </div>
+        <div class="shop-product__info">
+          <h3 class="shop-product__name">Чехол для телефона</h3>
+          <p class="shop-product__price">1990 руб.</p>
+        </div>
+      </div>
+
+      <div class="shop-product">
+        <div class="shop-product__image-wrapper">
+          <img src="images/shop-cups.webp" alt="Стаканы" class="shop-product__image">
+          <button class="shop-product__cart-btn" aria-label="Добавить в корзину">
+            <img src="images/cart-icon-black.svg" alt="">
+          </button>
+        </div>
+        <div class="shop-product__info">
+          <h3 class="shop-product__name">Стаканы (3 шт.)</h3>
+          <p class="shop-product__price">390 руб.</p>
+        </div>
+      </div>
+
+      <div class="shop-product">
+        <div class="shop-product__image-wrapper">
+          <img src="images/shop-pens.webp" alt="Набор из двух ручек" class="shop-product__image">
+          <button class="shop-product__cart-btn" aria-label="Добавить в корзину">
+            <img src="images/cart-icon-black.svg" alt="">
+          </button>
+        </div>
+        <div class="shop-product__info">
+          <h3 class="shop-product__name">Набор из двух ручек</h3>
+          <p class="shop-product__price">490 руб.</p>
+        </div>
+      </div>
+
+      <div class="shop-product">
+        <div class="shop-product__image-wrapper">
+          <img src="images/shop-stickers.webp" alt="Стикеры" class="shop-product__image">
+          <button class="shop-product__cart-btn" aria-label="Добавить в корзину">
+            <img src="images/cart-icon-black.svg" alt="">
+          </button>
+        </div>
+        <div class="shop-product__info">
+          <h3 class="shop-product__name">Стикеры (15 шт.)</h3>
+          <p class="shop-product__price">590 руб.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <section class="about-merch">
+    <div class="about-merch__container">
+      <div class="about-merch__text">
+        <h2>Посмотрите недавно <br> вышедшие спектакли </h2>
+        <p>Узнайте, какие спектакли идут сейчас, выберите любимые постановки и забронируйте билеты без очереди. Не пропустите премьеры и специальные события — искусство ждёт вас! </p>
+        <a href="./afisha.html" class="about-merch__button">посмотреть</a>
+      </div>
+      <div class="about-merch__image">
+        <img src="images/shop-bottom.webp" alt="Промо мерча">
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column footer-logo-col">
+      <a href="index.html" class="footer-logo">MERROR</a>
+    </div>
+    <div class="footer-column footer-nav-col">
+      <h3>Посетителям</h3>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="afisha.html">Афиша</a></li>
+          <li><a href="tickets.html">Билеты</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+          <li><a href="contest.html">Конкурс</a></li>
+          <li><a href="online-show.html">Онлайн представление</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-column footer-contacts-col">
+      <h3>контакты</h3>
+      <div class="contact-info">
+        <a href="tel:+79167770705">+7 (916) 777-07-05</a>
+        <a href="mailto:merror.th@mail.ru">merror.th@mail.ru</a>
+        <p>Дом октябрь 14. стр 2</p>
+      </div>
+      <div class="social-links">
+        <a href="#" aria-label="Telegram"><img src="images/telegram.svg" alt="Telegram"></a>
+        <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram"></a>
+        <a href="#" aria-label="WhatsApp"><img src="images/what's%20up.svg" alt="WhatsApp"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const swapImages = document.querySelectorAll('.product-swap-on-hover');
+    if (swapImages.length > 0) {
+      swapImages.forEach(product => {
+        const imageWrapper = product.querySelector('.shop-product__image-wrapper');
+        const image = product.querySelector('.shop-product__image');
+        const originalSrc = image.src;
+        const hoverSrc = image.dataset.hoverSrc;
+
+        if (imageWrapper && image && hoverSrc) {
+          imageWrapper.addEventListener('mouseenter', () => {
+            image.src = hoverSrc;
+          });
+          imageWrapper.addEventListener('mouseleave', () => {
+            image.src = originalSrc;
+          });
+        }
+      });
+    }
+  });
+
+
+</script>
 
   <script src="javascript/app.js"></script>
+
 
 </body>
 

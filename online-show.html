@@ -16,7 +16,7 @@
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.webp">
 
   <link rel="manifest" href="site.webmanifest">
 
@@ -32,9 +32,10 @@
 
 
 <header class="site-header">
-  <div class="container">
+  <div class="header-container">
     <div class="logo">
       <a href="index.html">MERROR</a>
+      <span>театр разбитых зеркал</span>
     </div>
     <div class="navigation-group">
       <nav class="main-nav">
@@ -44,18 +45,67 @@
           <li><a href="tickets.html">билеты</a></li>
           <li><a href="shop.html">магазин</a></li>
           <li><a href="contest.html">конкурс</a></li>
-          <li><a style="font-weight: 600" href="online-show.html">онлайн представление</a></li>
+          <li><a href="online-show.html">онлайн представление</a></li>
         </ul>
       </nav>
-      <a href="#" class="cart-link" aria-label="Корзина">
-        <img src="./images/shop.svg" alt="Корзина">
-      </a>
+<a href="#" class="cart-link" aria-label="Корзина">
+  <img src="images/cart-icon-black.svg" alt="Корзина">
+  <span class="cart-counter"></span>
+</a>
     </div>
   </div>
 </header>
 
 
-  <script src="javascript/app.js"></script>
+<main class="online-show-page">
+  <div class="online-show__row" data-cards="10"></div>
+  <div class="online-show__row" data-cards="10"></div>
+  <div class="online-show__row" data-cards="10"></div>
+  <div class="online-show__row online-show__row--special">
+    <div class="online-show__subgrid" data-cards="3"></div>
+    <div class="online-show__title-wrapper">
+      <a href="./Merror-3m/index.html"><h1 class="online-show__title">ОНЛАЙН-ПРЕДСТАВЛЕНИЕ</h1></a>
+    </div>
+    <div class="online-show__subgrid" data-cards="3"></div>
+  </div>
+  <div class="online-show__row" data-cards="10"></div>
+  <div class="online-show__row" data-cards="10"></div>
+</main>
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column footer-logo-col">
+      <a href="index.html" class="footer-logo">MERROR</a>
+    </div>
+    <div class="footer-column footer-nav-col">
+      <h3>Посетителям</h3>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="afisha.html">Афиша</a></li>
+          <li><a href="tickets.html">Билеты</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+          <li><a href="contest.html">Конкурс</a></li>
+          <li><a href="online-show.html">Онлайн представление</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-column footer-contacts-col">
+      <h3>контакты</h3>
+      <div class="contact-info">
+        <a href="tel:+79167770705">+7 (916) 777-07-05</a>
+        <a href="mailto:merror.th@mail.ru">merror.th@mail.ru</a>
+        <p>Дом октябрь 14. стр 2</p>
+      </div>
+      <div class="social-links">
+        <a href="#" aria-label="Telegram"><img src="images/telegram.svg" alt="Telegram"></a>
+        <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram"></a>
+        <a href="#" aria-label="WhatsApp"><img src="images/what's%20up.svg" alt="WhatsApp"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="javascript/online-show.js"></script>
 
 </body>
 
