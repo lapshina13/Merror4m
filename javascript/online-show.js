@@ -3,12 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const onlineShowPage = document.querySelector('.online-show-page');
 
     if (onlineShowPage) {
-        const frontImageSrc = '../images/blueFace.webp';
+        const frontImageSrc = './images/blueFace.webp';
 
         // вставляем разные маски на обратную часть синего лица
         const randomBackImages = [];
         for (let i = 1; i <= 22; i++) {
-            randomBackImages.push(`../images/red-face-${i}.webp`);
+            randomBackImages.push(`./images/red-face-${i}.webp`);
         }
 
 
